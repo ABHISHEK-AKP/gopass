@@ -38,10 +38,10 @@ function App() {
   const sinceActivation = `${String(timeSinceActivation.getUTCHours()).padStart(2, '0')}:${String(timeSinceActivation.getUTCMinutes()).padStart(2, '0')}:${String(timeSinceActivation.getUTCSeconds()).padStart(2, '0')}`;
 
   return (
-    <div className=" min-h-screen bg-[#4d472e] flex flex-col items-center justify-center text-white font-sans border-none">
+    <div className=" min-h-screen bg-[#7e7739] flex flex-col items-center justify-center text-white font-sans border-none">
       {/* <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className=" text-black w-full max-w-md border-none overflow-hidden"> */}
       <motion.div
-  initial={{ backgroundColor: "#4d472e" }}
+  initial={{ backgroundColor: "#7e7739" }}
   animate={{ backgroundColor: "#1e1a0f" }} // darker color
   transition={{ duration: 2,
     repeat: Infinity,
@@ -63,7 +63,7 @@ function App() {
       </div>
           <div className="text-sm">Main St. S. @ Elgin Dr. to University of Guelph - Weekend Pass</div>
         </div>
-        <div className="w-full py-1 border-none relative z-10 bg-[#4d472e]"></div>
+        <div className="w-full py-1 border-none relative z-10 bg-[#7e7739]"></div>
         <div
     className="absolute left-1/2 -translate-x-1/2"
     style={{
@@ -71,7 +71,7 @@ function App() {
       height: 24,
       borderRadius: "50%",
       border: "2px solid white",
-      backgroundColor: "#4d472e", // background same as parent or transparent
+      backgroundColor: "#7e7739", // background same as parent or transparent
       top: "203px", // position relative to upper div bottom (adjust as needed)
       zIndex: 20,
     }}
@@ -129,7 +129,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="bg-[#4d472e] py-1 border-none w-full"></div>
+        <div className="bg-[#7e7739] py-1 border-none w-full"></div>
         <div className=" text-white text-center p-4">
           <div className="text-[18px] mb-2 mx-4 mt-8">Please show proof of your ticket to the Customer Protective Officers when asked</div>
           <div className="text-2xl font-bold">{formatTime(timeLeft)}</div>
