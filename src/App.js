@@ -38,7 +38,7 @@ function App() {
   const sinceActivation = `${String(timeSinceActivation.getUTCHours()).padStart(2, '0')}:${String(timeSinceActivation.getUTCMinutes()).padStart(2, '0')}:${String(timeSinceActivation.getUTCSeconds()).padStart(2, '0')}`;
 
   return (
-    <div className="min-h-screen bg-[#4d472e] flex flex-col items-center justify-center text-white font-sans border-none">
+    <div className=" min-h-screen bg-[#4d472e] flex flex-col items-center justify-center text-white font-sans border-none">
       {/* <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className=" text-black w-full max-w-md border-none overflow-hidden"> */}
       <motion.div
   initial={{ backgroundColor: "#4d472e" }}
@@ -50,7 +50,7 @@ function App() {
    }}
   className="min-h-screen flex flex-col items-center justify-center text-black font-sans border-none w-full max-w-md border-none overflow-hidden"
 >
-        <div className=" text-white text-center py-4">
+        <div className=" text-white text-center py-4 relative z-10">
         <div className="w-full overflow-hidden whitespace-nowrap  py-2 text-white">
         <motion.div
           className="flex  w-max gap-12 text-2xl font-bold tracking-wider"
@@ -63,9 +63,21 @@ function App() {
       </div>
           <div className="text-sm">Main St. S. @ Elgin Dr. to University of Guelph - Weekend Pass</div>
         </div>
-        <div className=" py-1 border-none"></div>
-        <div className="w-full p-4 flex justify-around text-center border-b-[3px] border-dotted border-gray-400 bg-white">
-          <div className="flex flex-col items-center justify-center">
+        <div className="w-full py-1 border-none relative z-10 bg-[#4d472e]"></div>
+        <div
+    className="absolute left-1/2 -translate-x-1/2"
+    style={{
+      width: 24,    // adjust size as needed
+      height: 24,
+      borderRadius: "50%",
+      border: "2px solid white",
+      backgroundColor: "#4d472e", // background same as parent or transparent
+      top: "203px", // position relative to upper div bottom (adjust as needed)
+      zIndex: 20,
+    }}
+  ></div>
+        <div className="w-full p-4 flex justify-around text-center border-b-[3px] border-dotted border-gray-400 bg-white relative z-10">
+          <div className="mx-2 flex flex-col items-center justify-center">
             <div className="text-5xl font-bold">x1</div>
             <div className="text-xl font-bold">Passenger(s)</div>
             <div className="text-xm mt-2">1x Weekend Pass</div>
@@ -117,7 +129,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="bg-[#4d472e] py-1 border-none"></div>
+        <div className="bg-[#4d472e] py-1 border-none w-full"></div>
         <div className=" text-white text-center p-4">
           <div className="text-[18px] mb-2 mx-4 mt-8">Please show proof of your ticket to the Customer Protective Officers when asked</div>
           <div className="text-2xl font-bold">{formatTime(timeLeft)}</div>
