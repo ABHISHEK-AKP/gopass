@@ -41,9 +41,9 @@ function App() {
     <div className="min-h-screen bg-[#4d472e] flex flex-col items-center justify-center text-white font-sans">
       <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} className="bg-white text-black w-full max-w-md rounded-xl shadow-lg overflow-hidden">
         <div className="bg-[#4d472e] text-white text-center py-4">
-        <div className="w-full overflow-hidden whitespace-nowrap bg-[#4d472e] py-2 text-white">
+        <div className="w-full overflow-hidden whitespace-nowrap  py-2 text-white">
         <motion.div
-          className="flex absolute w-max gap-12 text-2xl font-bold tracking-wider"
+          className="flex  w-max gap-12 text-2xl font-bold tracking-wider"
           animate={{ x: ["0%", "-50%"] }}
           transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
         >
@@ -51,7 +51,6 @@ function App() {
           <span>GO TRANSIT &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;•&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
         </motion.div>
       </div>
-          <div className="text-2xl font-bold">GO TRANSIT</div>
           <div className="text-sm">Main St. S. @ Elgin Dr. to University of Guelph - Weekend Pass</div>
         </div>
         <div className="p-4 flex justify-around text-center border-b">
