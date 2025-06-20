@@ -50,7 +50,7 @@ function App() {
    }}
   className="min-h-screen flex flex-col items-center justify-center text-black font-sans border-none w-full max-w-md border-none overflow-hidden"
 >
-        <div className=" text-white text-center py-4 relative z-10">
+        <div className="max-w-full text-white text-center py-4 relative z-10">
         <div className="w-full overflow-hidden whitespace-nowrap  py-2 text-white">
         <motion.div
           className="flex  w-max gap-12 text-2xl font-bold tracking-wider"
@@ -61,7 +61,7 @@ function App() {
           <span>GO TRANSIT &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;•&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
         </motion.div>
       </div>
-          <div className="text-sm">Main St. S. @ Elgin Dr. to University of Guelph - Weekend Pass</div>
+          <div className="text-base mb-6">Main St. S. @ Elgin Dr. to University of Guelph - Weekend Pass</div>
         </div>
         <div className="w-full py-1 border-none relative z-10 bg-[#7e7739]"></div>
         <div
@@ -72,7 +72,7 @@ function App() {
       borderRadius: "50%",
       border: "2px solid white",
       backgroundColor: "#7e7739", // background same as parent or transparent
-      top: "203px", // position relative to upper div bottom (adjust as needed)
+      top: "218px", // position relative to upper div bottom (adjust as needed)
       zIndex: 20,
     }}
   ></div>
