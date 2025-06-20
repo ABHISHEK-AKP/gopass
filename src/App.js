@@ -61,7 +61,7 @@ function App() {
           <span>GO TRANSIT &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;•&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
         </motion.div>
       </div>
-          <div className="text-base mb-6">Main St. S. @ Elgin Dr. to University of Guelph - Weekend Pass</div>
+          <div className="text-[14px] min-w-full  mb-4">Main St. S. @ Elgin Dr. to University of Guelph - Weekend Pass</div>
         </div>
         <div className="w-full py-1 border-none relative z-10 bg-[#7e7739]"></div>
         <div
@@ -72,7 +72,7 @@ function App() {
       borderRadius: "50%",
       border: "2px solid white",
       backgroundColor: "#7e7739", // background same as parent or transparent
-      top: "218px", // position relative to upper div bottom (adjust as needed)
+      top: "calc(25% + 20px)", // position relative to upper div bottom (adjust as needed)
       zIndex: 20,
     }}
   ></div>
@@ -117,7 +117,70 @@ function App() {
         </div>
         <div className="w-full px-4 py-2 text-sm text-center bg-white">
           <div className="mb-2 text-lg">Ticket Number: <strong>MZ63792656</strong></div>
-          <div className="bg-gray-300 h-16 mb-2" /> {/* Placeholder for barcode */}
+          <div className="relative w-full h-16 bg-white overflow-hidden flex items-center justify-center">
+ 
+  <div className="absolute inset-0 flex space-x-1 px-2">
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-2 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-2 h-full"></div>
+    <div className="bg-gray-400 w-1.5 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-1.5 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-2 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-1.5 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-2 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-2 h-full"></div>
+    <div className="bg-gray-400 w-1.5 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-1.5 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-2 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-1.5 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-0.5 h-full"></div>
+    <div className="bg-gray-400 w-1 h-full"></div>
+    <div className="bg-gray-400 w-2 h-full"></div>
+  </div>
+
+  <div className="relative bg-white px-4 py-1 z-10">
+  <motion.span
+  className="text-2xl font-medium tracking-wide"
+  animate={{ color: ["#7e7739", "#ffffff", "#7e7739"] }}
+  transition={{
+    duration: 2,
+    repeat: Infinity,
+    repeatType: "loop",
+    ease: "easeInOut",
+  }}
+>
+  ACTIVE
+</motion.span>
+    {/* <span className="text-[#6f6c3d] text-2xl font-medium tracking-wide">ACTIVE</span> */}
+  </div>
+</div>
           <div className="flex justify-between text-xs">
             <div className='text-center'>
               <div className="font-bold text-[11px]">CURRENT DATE & TIME:</div>
